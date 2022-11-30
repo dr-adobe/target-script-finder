@@ -1,0 +1,23 @@
+.picker {
+  background-color: var(--dark-background-color);
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  margin: 0;
+}
+.picker select {
+  padding: 1em;
+  margin: 1em;
+  border-radius: var(--radius-standard);
+}
+.picker select option {
+  padding: 0.5em 1em;
+}
+.picker button {
+  padding: 0.25em 1em;
+  background-color: var(--button-primary-color);
+  font-size: 1em;
+  border-radius: var(--radius-standard);
+  border: 1px solid var(--highlight-background-color);
+  color: white;
+}

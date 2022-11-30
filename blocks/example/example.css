@@ -1,0 +1,27 @@
+.example.block {
+  display: flex;
+  align-items: center;
+}
+.example.block::after {
+  content: "example";
+  font-style: italic;
+  color: var(--highlight-background-color);
+  height: 100%;
+  width: 3em;
+  padding: 0.5em 1em 1em 1em;
+  align-self: start;
+}
+.example.block::before {
+  content: url("/assets/noun-training.svg");
+  width: 48px;
+  height: 48px;
+  margin-right: 1em;
+}
+.example.block > div {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+  flex-grow: 1;
+  border-radius: var(--radius-standard);
+}

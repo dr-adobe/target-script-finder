@@ -1,0 +1,28 @@
+.objective.block {
+  display: flex;
+  align-items: center;
+}
+.objective.block::after {
+  content: "objective";
+  font-style: italic;
+  color: var(--highlight-background-color);
+  height: 100%;
+  width: 3em;
+  padding: 0.5em 1em 1em 1em;
+  align-self: start;
+}
+.objective.block::before {
+  content: url("/assets/noun-objective.svg");
+  width: 48px;
+  height: 48px;
+  margin-right: 1em;
+}
+.objective.block > div {
+  background-color: var(--dark-background-color);
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  border-radius: var(--radius-standard);
+}

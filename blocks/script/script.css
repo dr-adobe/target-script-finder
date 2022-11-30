@@ -1,0 +1,25 @@
+.script.block {
+  display: flex;
+  align-items: center;
+}
+.script.block::before {
+  content: url(/assets/noun-code.svg);
+  width: 48px;
+  height: 48px;
+  margin-right: 1em;
+}
+.script.block::after {
+  content: "script";
+  font-style: italic;
+  color: var(--highlight-background-color);
+  height: 100%;
+  width: 3em;
+  padding: 0.5em 1em 1em 1em;
+  align-self: start;
+}
+.script.block p {
+  margin: 0;
+}
+.script.block pre {
+  flex-grow: 1;
+}

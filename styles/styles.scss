@@ -17,6 +17,7 @@
     --background-color: #fff;
     --overlay-background-color: #eee;
     --highlight-background-color: #ccc;
+    --dark-background-color: #282828;
     --text-color: #000;
   
     /* fonts */
@@ -39,7 +40,12 @@
   
     /* nav height */
     --nav-height: 64px;
+
+    /* Edges */
+    --radius-standard: 5px;
   
+    /* Buttons */
+    --button-primary-color: rgb(255, 0, 0);
   }
   
   body {
@@ -242,7 +248,19 @@
     }
     
     .section > div {
-      max-width: 1200px;
+      max-width: 86vw;
       margin: auto;
+    }
+  }
+
+  /* Default section styling */
+
+  main .section {
+    &:nth-child(odd):not(:first-child){
+      background-color: var(--dark-background-color);
+      color: white;
+    }
+
+    &:nth-child(even) {
     }
   }
