@@ -36,8 +36,6 @@ import { readBlockConfig } from '../../scripts/scripts.js';
         "e4x": false,
         "indent_empty_lines": false
       };
-
-    // TODO: Beautify code
     
 
     let p = document.createElement("pre");
